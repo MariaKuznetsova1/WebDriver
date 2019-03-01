@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="NewMessageTest(failed)">
+    <classes>
+      <class name="ru.tests.NewLetterTest">
+        <methods>
+          <include name="writtingOfNewLetter" invocation-numbers="0 1 2 3 4"/>
+          <include name="openOfFormForCreateNewLetter"/>
+          <include name="getStartPage"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- ru.tests.NewLetterTest -->
+    </classes>
+  </test> <!-- NewMessageTest(failed) -->
+  <test thread-count="5" name="DraftTest(failed)">
+    <classes>
+      <class name="ru.tests.DraftTest">
+        <methods>
+          <include name="checkingLastDraft"/>
+          <include name="getStartPage"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- ru.tests.DraftTest -->
+    </classes>
+  </test> <!-- DraftTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

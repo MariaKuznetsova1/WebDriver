@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" verbose="1">
+  <test name="LoginTest" >
+    <classes>
+      <class name="ru.tests.LoginTest"/>
+      <parameter name="login" value="seleniumtest00"/>
+      <parameter name="password" value="gfhjkmlkzntcnjd"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="NewMessageTest">
+    <classes>
+    <class name="ru.tests.NewLetterTest"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="DraftTest">
+    <classes>
+    <class name="ru.tests.DraftTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="LogoutTest">
+    <classes>
+    <class name="ru.tests.LogoutTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
