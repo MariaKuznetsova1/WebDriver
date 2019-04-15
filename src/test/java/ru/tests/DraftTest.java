@@ -1,27 +1,25 @@
 package ru.tests;
 
-import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterGroups;
 import org.testng.annotations.Test;
-import ru.pageobjects.yahoo.DraftPage;
-import ru.pageobjects.yahoo.LoginPage;
-import ru.pageobjects.yahoo.MainPage;
 
 public class DraftTest extends ParentTest {
-	LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-	MainPage mainPage = PageFactory.initElements(driver, MainPage.class);
-	DraftPage draftPage = PageFactory.initElements(driver, DraftPage.class);
-	
+	private int counter = 1;
 
-	@Test(dataProvider = "dp", groups = "draft")
-	public void checkingLastDraft(Object[][] object) {	
-		assertEquals(draftPage.getLastTheme(),object[object.length-1][1]);
-		assertEquals(draftPage.getLastBody(),object[object.length-1][2]);
+	@Test(groups = "draft", dataProvider = "dp", dataProviderClass = ParentTest.class)
+	public void checkingLastDraft(String to, String subject, String text) throws InterruptedException {
+		box.goToDraft();
+		int lengt = dp().length;
+		String lastTheme = box.getThemeOfMessage(lengt - counter);
+		String lastBody = box.getBodyOfMessage(lengt - counter);
+		assertEquals(lastTheme, subject);
+		assertEquals(lastBody, text);
+		counter++;
 	}
 
 	@AfterGroups("draft")
-	public void clearDrafts() {
-		draftPage.cleanAllDraft();
+	public void deleteDrafts() {
+		box.deleteAllDrafts();
 	}
 
 }

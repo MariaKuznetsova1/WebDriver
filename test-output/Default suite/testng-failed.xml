@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ru.tests.NewLetterTest">
+      <class name="ru.tests.LogoutTest">
         <methods>
-          <include name="writtingOfNewLetter" invocation-numbers="0 1 2 3 4"/>
-          <include name="getStartPage"/>
+          <include name="goToStartPageAndLogin"/>
+          <include name="logoutTest"/>
+          <include name="logout"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- ru.tests.NewLetterTest -->
+      </class> <!-- ru.tests.LogoutTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

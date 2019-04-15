@@ -1,17 +1,14 @@
 package ru.tests;
 
-import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.AfterTest;
-import ru.pageobjects.yahoo.LoginPage;
-import ru.pageobjects.yahoo.MainPage;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
-public class LogoutTest extends ParentTest{	
-	LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-	MainPage mainPage = PageFactory.initElements(driver, MainPage.class);
-	
-	@AfterTest
-	public void logout() {
-		mainPage.exit();
-		assertTrue(loginPage.checkFormLogin());
+public class LogoutTest extends ParentTest {
+
+	@Parameters("login")
+	@Test
+	public void logoutTest(String login) {
+		box.exit();
+		assertFalse(driver.getTitle().contains(login));
 	}
 }

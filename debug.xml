@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" verbose="10">
+	<parameter name="login" value="seleniumtest00" />
+	<parameter name="password" value="gfhjkmlkzntcnjd" />
+
+	<test name="LogoutTest">
+		<groups>
+			<run>
+				<exclude name="logout" />
+			</run>
+		</groups>
+		<classes>
+			<class name="ru.tests.LogoutTest">
+			</class>
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

@@ -9,231 +9,33 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">LoginTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">149 389</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">NewMessageTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">6</td><td class="num">60 353</td><td></td><td></td></tr>
-<tr><td><a href="#t2">DraftTest</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t3">LogoutTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">10 081</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">7</th><th class="num">219 823</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">NewMessageTest</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">52 108</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">LoginTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">8 271</td><td></td><td></td></tr>
+<tr><td><a href="#t2">DraftTest</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">46 888</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">SendTest</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">97 099</td><td></td><td></td></tr>
+<tr><td><a href="#t4">LogoutTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">26 581</td><td></td><td>logout</td></tr>
+<tr><th>Total</th><th class="num">15</th><th class="num">0</th><th class="num">0</th><th class="num">230 947</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LoginTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">ru.tests.LoginTest</td><td><a href="#m0">setLogin</a></td><td rowspan="1">1551428330046</td><td rowspan="1">149372</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">NewMessageTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="6">ru.tests.NewLetterTest</td><td><a href="#m1">openOfFormForCreateNewLetter</a></td><td rowspan="1">1551428479502</td><td rowspan="1">10084</td></tr><tr class="failedeven"><td><a href="#m2">writtingOfNewLetter</a></td><td rowspan="5">1551428489602</td><td rowspan="5">10036</td></tr><tr class="failedeven"><td><a href="#m3">writtingOfNewLetter</a></td></tr><tr class="failedeven"><td><a href="#m4">writtingOfNewLetter</a></td></tr><tr class="failedeven"><td><a href="#m5">writtingOfNewLetter</a></td></tr><tr class="failedeven"><td><a href="#m6">writtingOfNewLetter</a></td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">DraftTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ru.tests.DraftTest</td><td><a href="#m7">checkingLastDraft</a></td><td rowspan="1">1551428539862</td><td rowspan="1">0</td></tr></tbody>
-<tbody id="t3"><tr><th colspan="4">LogoutTest &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">ru.tests.LogoutTest</td><td><a href="#m8">logout</a></td><td rowspan="1">1551428539862</td><td rowspan="1">10081</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">NewMessageTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">ru.tests.NewLetterTest</td><td><a href="#m0">writtingOfNewLetter</a></td><td rowspan="3">1555341609793</td><td rowspan="3">12740</td></tr><tr class="passedeven"><td><a href="#m1">writtingOfNewLetter</a></td></tr><tr class="passedeven"><td><a href="#m2">writtingOfNewLetter</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">LoginTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">ru.tests.LoginTest</td><td><a href="#m3">checkLoginning</a></td><td rowspan="1">1555341659783</td><td rowspan="1">142</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">DraftTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">ru.tests.DraftTest</td><td><a href="#m4">checkingLastDraft</a></td><td rowspan="3">1555341666105</td><td rowspan="3">13679</td></tr><tr class="passedeven"><td><a href="#m5">checkingLastDraft</a></td></tr><tr class="passedeven"><td><a href="#m6">checkingLastDraft</a></td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">SendTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">ru.tests.SendLetterTest</td><td><a href="#m7">checkingLastSentLetter</a></td><td rowspan="3">1555341788825</td><td rowspan="3">14270</td></tr><tr class="passedeven"><td><a href="#m8">checkingLastSentLetter</a></td></tr><tr class="passedeven"><td><a href="#m9">checkingLastSentLetter</a></td></tr><tr class="passedeven"><td><a href="#m10">deleteAll</a></td><td rowspan="1">1555341803095</td><td rowspan="1">200</td></tr><tr class="passedeven"><td><a href="#m11">writtingOfNewLetter</a></td><td rowspan="3">1555341713128</td><td rowspan="3">15061</td></tr><tr class="passedeven"><td><a href="#m12">writtingOfNewLetter</a></td></tr><tr class="passedeven"><td><a href="#m13">writtingOfNewLetter</a></td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">LogoutTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">ru.tests.LogoutTest</td><td><a href="#m14">logoutTest</a></td><td rowspan="1">1555341829331</td><td rowspan="1">3068</td></tr></tbody>
 </table>
-<h2>LoginTest</h2><h3 id="m0">ru.tests.LoginTest#setLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>seleniumtest00</td><td>gfhjkmlkzntcnjd</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: Key Down / Up events only make sense for modifier keys.
-	at org.openqa.selenium.interactions.internal.SingleKeyAction.&lt;init&gt;(SingleKeyAction.java:49)
-	at org.openqa.selenium.interactions.internal.SingleKeyAction.&lt;init&gt;(SingleKeyAction.java:37)
-	at org.openqa.selenium.interactions.KeyDownAction.&lt;init&gt;(KeyDownAction.java:40)
-	at org.openqa.selenium.interactions.Actions.keyDown(Actions.java:115)
-	at ru.tests.LoginTest.setLogin(LoginTest.java:23)
-... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>NewMessageTest</h2><h3 id="m1">ru.tests.NewLetterTest#openOfFormForCreateNewLetter</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-test-id*=&apos;compose-button&apos;]&quot;}
-  (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EPRURYAW7112&apos;, ip: &apos;10.19.10.190&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\MARIA_~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53280}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 309c811f430f58512598d6fd412154a4
-*** Element info: {Using=css selector, value=[data-test-id*=&apos;compose-button&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at ru.pageobjects.yahoo.MainPage.createNew(MainPage.java:35)
-	at ru.tests.NewLetterTest.openOfFormForCreateNewLetter(NewLetterTest.java:26)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">ru.tests.NewLetterTest#writtingOfNewLetter</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>one</td><td>oneoneone</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-test-folder-name=&apos;Draft&apos;]&quot;}
-  (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EPRURYAW7112&apos;, ip: &apos;10.19.10.190&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\MARIA_~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53280}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 309c811f430f58512598d6fd412154a4
-*** Element info: {Using=css selector, value=[data-test-folder-name=&apos;Draft&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getAttribute(Unknown Source)
-	at ru.pageobjects.yahoo.MainPage.checkCountDraft(MainPage.java:51)
-	at ru.tests.NewLetterTest.writtingOfNewLetter(NewLetterTest.java:32)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">ru.tests.NewLetterTest#writtingOfNewLetter</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>five</td><td>fivefive</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-test-folder-name=&apos;Draft&apos;]&quot;}
-  (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EPRURYAW7112&apos;, ip: &apos;10.19.10.190&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\MARIA_~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53280}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 309c811f430f58512598d6fd412154a4
-*** Element info: {Using=css selector, value=[data-test-folder-name=&apos;Draft&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getAttribute(Unknown Source)
-	at ru.pageobjects.yahoo.MainPage.checkCountDraft(MainPage.java:51)
-	at ru.tests.NewLetterTest.writtingOfNewLetter(NewLetterTest.java:32)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">ru.tests.NewLetterTest#writtingOfNewLetter</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>three</td><td>threethreethree</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-test-folder-name=&apos;Draft&apos;]&quot;}
-  (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EPRURYAW7112&apos;, ip: &apos;10.19.10.190&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\MARIA_~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53280}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 309c811f430f58512598d6fd412154a4
-*** Element info: {Using=css selector, value=[data-test-folder-name=&apos;Draft&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getAttribute(Unknown Source)
-	at ru.pageobjects.yahoo.MainPage.checkCountDraft(MainPage.java:51)
-	at ru.tests.NewLetterTest.writtingOfNewLetter(NewLetterTest.java:32)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">ru.tests.NewLetterTest#writtingOfNewLetter</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>two</td><td>twotwotwo</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-test-folder-name=&apos;Draft&apos;]&quot;}
-  (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EPRURYAW7112&apos;, ip: &apos;10.19.10.190&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\MARIA_~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53280}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 309c811f430f58512598d6fd412154a4
-*** Element info: {Using=css selector, value=[data-test-folder-name=&apos;Draft&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getAttribute(Unknown Source)
-	at ru.pageobjects.yahoo.MainPage.checkCountDraft(MainPage.java:51)
-	at ru.tests.NewLetterTest.writtingOfNewLetter(NewLetterTest.java:32)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">ru.tests.NewLetterTest#writtingOfNewLetter</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>four</td><td>fourfourfour</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-test-folder-name=&apos;Draft&apos;]&quot;}
-  (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EPRURYAW7112&apos;, ip: &apos;10.19.10.190&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\MARIA_~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53280}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 309c811f430f58512598d6fd412154a4
-*** Element info: {Using=css selector, value=[data-test-folder-name=&apos;Draft&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.getAttribute(Unknown Source)
-	at ru.pageobjects.yahoo.MainPage.checkCountDraft(MainPage.java:51)
-	at ru.tests.NewLetterTest.writtingOfNewLetter(NewLetterTest.java:32)
-... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>DraftTest</h2><h3 id="m7">ru.tests.DraftTest#checkingLastDraft</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.reflect.MethodMatcherException: 
-Data provider mismatch
-Method: checkingLastDraft([Parameter{index=0, type=[[Ljava.lang.Object;, declaredAnnotations=[]}])
-Arguments: [(java.lang.String) seleniumtest00@mail.ru,(java.lang.String) one,(java.lang.String) oneoneone]
-... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>LogoutTest</h2><h3 id="m8">ru.tests.LogoutTest#logout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;ybarAccountMenu&quot;}
-  (Session info: chrome=72.0.3626.119)
-  (Driver info: chromedriver=73.0.3683.20 (8e2b610813e167eee3619ac4ce6e42e3ec622017),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;EPRURYAW7112&apos;, ip: &apos;10.19.10.190&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 73.0.3683.20 (8e2b610813e16..., userDataDir: C:\Users\MARIA_~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53280}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 72.0.3626.119, webStorageEnabled: true}
-Session ID: 309c811f430f58512598d6fd412154a4
-*** Element info: {Using=id, value=ybarAccountMenu}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at ru.pageobjects.yahoo.MainPage.exit(MainPage.java:45)
-	at ru.tests.LogoutTest.logout(LogoutTest.java:14)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>NewMessageTest</h2><h3 id="m0">ru.tests.NewLetterTest#writtingOfNewLetter</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>one</td><td>oneoneone</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">ru.tests.NewLetterTest#writtingOfNewLetter</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>three</td><td>threethreethree</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">ru.tests.NewLetterTest#writtingOfNewLetter</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>two</td><td>twotwotwo</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>LoginTest</h2><h3 id="m3">ru.tests.LoginTest#checkLoginning</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>seleniumtest00</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>DraftTest</h2><h3 id="m4">ru.tests.DraftTest#checkingLastDraft</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>one</td><td>oneoneone</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">ru.tests.DraftTest#checkingLastDraft</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>two</td><td>twotwotwo</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">ru.tests.DraftTest#checkingLastDraft</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>three</td><td>threethreethree</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>SendTest</h2><h3 id="m7">ru.tests.SendLetterTest#checkingLastSentLetter</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>three</td><td>threethreethree</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">ru.tests.SendLetterTest#checkingLastSentLetter</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>one</td><td>oneoneone</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">ru.tests.SendLetterTest#checkingLastSentLetter</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>two</td><td>twotwotwo</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">ru.tests.SendLetterTest#deleteAll</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">ru.tests.SendLetterTest#writtingOfNewLetter</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>one</td><td>oneoneone</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">ru.tests.SendLetterTest#writtingOfNewLetter</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>two</td><td>twotwotwo</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">ru.tests.SendLetterTest#writtingOfNewLetter</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>seleniumtest00@mail.ru</td><td>three</td><td>threethreethree</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>LogoutTest</h2><h3 id="m14">ru.tests.LogoutTest#logoutTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>seleniumtest00</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="NewMessageTest(failed)">
-    <classes>
-      <class name="ru.tests.NewLetterTest">
-        <methods>
-          <include name="writtingOfNewLetter" invocation-numbers="0 1 2 3 4"/>
-          <include name="openOfFormForCreateNewLetter"/>
-          <include name="getStartPage"/>
-          <include name="closeDriver"/>
-        </methods>
-      </class> <!-- ru.tests.NewLetterTest -->
-    </classes>
-  </test> <!-- NewMessageTest(failed) -->
-  <test thread-count="5" name="DraftTest(failed)">
+<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Suite]">
+  <parameter name="password" value="gfhjkmlkzntcnjd"/>
+  <parameter name="login" value="seleniumtest00"/>
+  <test thread-count="5" verbose="10" name="DraftTest(failed)">
     <classes>
       <class name="ru.tests.DraftTest">
         <methods>
-          <include name="checkingLastDraft"/>
-          <include name="getStartPage"/>
+          <include name="goToStartPageAndLogin"/>
+          <include name="checkingLastDraft" invocation-numbers="0 1 2"/>
+          <include name="logout"/>
           <include name="closeDriver"/>
         </methods>
       </class> <!-- ru.tests.DraftTest -->

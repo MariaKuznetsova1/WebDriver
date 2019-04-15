@@ -12,12 +12,12 @@ public class DriverForChrome {
 	}
 	
 	public static WebDriver getDriver() {
-		if (instance == null) { // если объект еще не создан
+		if (instance == null) { // РµСЃР»Рё РѕР±СЉРµРєС‚ РµС‰Рµ РЅРµ СЃРѕР·РґР°РЅ
 			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-			instance = new ChromeDriver(); // создать новый объект			
+			instance = new ChromeDriver(); // СЃРѕР·РґР°С‚СЊ РЅРѕРІС‹Р№ РѕР±СЉРµРєС‚			
 			instance.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}
-		return instance; // вернуть ранее созданный объект		
+		return instance; // РІРµСЂРЅСѓС‚СЊ СЂР°РЅРµРµ СЃРѕР·РґР°РЅРЅС‹Р№ РѕР±СЉРµРєС‚		
 	}
 	
 }

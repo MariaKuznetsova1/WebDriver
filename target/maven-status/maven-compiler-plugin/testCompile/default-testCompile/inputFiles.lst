@@ -1,13 +1,14 @@
 C:\Users\Maria_Kuznetsova1\eclipse-workspace\hellomaven\src\test\java\ru\pageobjects\yahoo\MainPage.java
 C:\Users\Maria_Kuznetsova1\eclipse-workspace\hellomaven\src\test\java\ru\tests\DraftTest.java
 C:\Users\Maria_Kuznetsova1\eclipse-workspace\hellomaven\src\test\java\ru\pageobjects\yahoo\ParentPage.java
+C:\Users\Maria_Kuznetsova1\eclipse-workspace\hellomaven\src\test\java\ru\pageobjects\yahoo\LetterPage.java
 C:\Users\Maria_Kuznetsova1\eclipse-workspace\hellomaven\src\test\java\ru\pageobjects\yahoo\NewLetterPage.java
+C:\Users\Maria_Kuznetsova1\eclipse-workspace\hellomaven\src\test\java\ru\drivers\DriverForChrome.java
+C:\Users\Maria_Kuznetsova1\eclipse-workspace\hellomaven\src\test\java\ru\tests\SendLetterTest.java
 C:\Users\Maria_Kuznetsova1\eclipse-workspace\hellomaven\src\test\java\ru\pageobjects\yahoo\LoginPage.java
 C:\Users\Maria_Kuznetsova1\eclipse-workspace\hellomaven\src\test\java\ru\tests\LogoutTest.java
 C:\Users\Maria_Kuznetsova1\eclipse-workspace\hellomaven\src\test\java\ru\tests\NewLetterTest.java
 C:\Users\Maria_Kuznetsova1\eclipse-workspace\hellomaven\src\test\java\ru\drivers\DriverFactory.java
-C:\Users\Maria_Kuznetsova1\eclipse-workspace\hellomaven\src\test\java\ru\ElementHandler.java
 C:\Users\Maria_Kuznetsova1\eclipse-workspace\hellomaven\src\test\java\ru\tests\LoginTest.java
 C:\Users\Maria_Kuznetsova1\eclipse-workspace\hellomaven\src\test\java\ru\drivers\TypeOfDriver.java
 C:\Users\Maria_Kuznetsova1\eclipse-workspace\hellomaven\src\test\java\ru\tests\ParentTest.java
-C:\Users\Maria_Kuznetsova1\eclipse-workspace\hellomaven\src\test\java\ru\pageobjects\yahoo\DraftPage.java
