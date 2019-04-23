@@ -29,4 +29,19 @@ public class ActionWithMenu {
 		menu.createNew();
 	}
 
+	public void goToBasket() {
+		menu.goToBasket();
+	}
+
+	public int getNumberOfTrash() {
+		return menu.checkCountTrash();
+	}
+
+	public void deleteAllTheTrash() {
+		menu.deleteTrash();
+	}
+
+	public void update() {
+		menu.updateThePage();
+	}
 }

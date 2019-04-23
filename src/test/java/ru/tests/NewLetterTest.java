@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import ru.business.Message;
 
 public class NewLetterTest extends ParentTest {
+
 	private static final String BODY_OF_LETTER_ID = "mail-app-component";
 
 	@Test(dataProvider = "dp", dataProviderClass = ParentTest.class)

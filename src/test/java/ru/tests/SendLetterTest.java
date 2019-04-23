@@ -1,15 +1,17 @@
 package ru.tests;
 
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 
 import ru.business.Message;
 
 public class SendLetterTest extends ParentTest {
+
 	private int counter = 1;
 
-	@Test(groups = "toWriteLetter", dataProvider = "dp", dataProviderClass = ParentTest.class, priority = 0)
+	@Test(groups = "sent", dataProvider = "dp", dataProviderClass = ParentTest.class, priority = 0)
 	public void writtingOfNewLetter(String to, String subject, String text) throws InterruptedException {
-		// mainPage.checkSent();
 		int countOfSent = box.getNumberOfSent();
 		Message message = box.createNewMessage(to, subject, text);
 		box.toSendMessage(message);
@@ -23,8 +25,9 @@ public class SendLetterTest extends ParentTest {
 		assertEquals(box.getNumberOfSent(), countOfSent);
 	}
 
-	@Test(groups = "toCheckSentLetters", dataProvider = "dp", dataProviderClass = ParentTest.class, priority = 1)
-	public void checkingLastSentLetter(String to, String subject, String text) throws InterruptedException {
+	@Test(groups = "afterSent", dataProvider = "dp", dataProviderClass = ParentTest.class, priority = 1)
+	public void checkingLastSentLetter(String to, String subject, String text)
+			throws InterruptedException, IOException {
 		box.goToSent();
 		int lengt = dp().length;
 		String lastTheme = box.getThemeOfMessage(lengt - counter);

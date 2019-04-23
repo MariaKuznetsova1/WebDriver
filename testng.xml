@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Suite" verbose="10">
+<suite name="Suite" verbose="1">
 	<parameter name="login" value="seleniumtest00" />
 	<parameter name="password" value="gfhjkmlkzntcnjd" />
+	<parameter name="csvSource" value="TestData.csv" />
+	<parameter name="start page" value="https://mail.yahoo.com" />
 	
 	<test name="NewMessageTest">
 		<classes>
@@ -28,6 +30,20 @@
 	<test name="SendTest">
 		<classes>
 			<class name="ru.tests.SendLetterTest">
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="AnotherWayForDeleting">
+		<classes>
+			<class name="ru.tests.usabilityTests.AnotherWayForDeletingTest">
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="CleanTheTrashBasket">
+		<classes>
+			<class name="ru.tests.usabilityTests.CleaningTheBasket">
 			</class>
 		</classes>
 	</test> <!-- Test -->

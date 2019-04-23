@@ -36,4 +36,9 @@ public class Message {
 		this.body = body;
 	}
 
+	@Override
+	public String toString() {
+		return "Message [to=" + to + ", theme=" + theme + ", body=" + body + "]";
+	}
+
 }

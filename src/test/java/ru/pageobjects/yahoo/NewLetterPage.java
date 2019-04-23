@@ -14,7 +14,6 @@ public class NewLetterPage extends ParentPage {
 	private static final String FIELD_SUBJECT_CSS = "[data-test-id*='compose-subject']";
 	private static final String FIELD_TEXT_CSS = "[data-test-id='rte']";
 	private static final String TO_SEND_A_MESSAGE_CSS = "[data-test-id=compose-send-button]";
-	
 
 	@FindBy(id = FIELD_TO_ID)
 	private WebElement fillingOfToField;
@@ -35,23 +34,28 @@ public class NewLetterPage extends ParentPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public NewLetterPage fillingOfFieldsOfMessage(String to, String subject, String text) {
+
+	public NewLetterPage setToField(String to) {
 		Actions act = new Actions(driver);
 		act.doubleClick(fillingOfToField).sendKeys(fillingOfToField, to).build().perform();
+		return this;
+	}
+
+	public NewLetterPage setThemeField(String subject) {
+		Actions act = new Actions(driver);
 		act.doubleClick(fillingOfSubjectField).sendKeys(fillingOfSubjectField, subject).build().perform();
+		return this;
+	}
+
+	public NewLetterPage setBodyField(String text) {
+		Actions act = new Actions(driver);
 		act.doubleClick(fillingOfBodyOfLetter).sendKeys(fillingOfBodyOfLetter, text).build().perform();
-//		fillingOfToField.clear();
-//		fillingOfToField.sendKeys(to);
-//		fillingOfSubjectField.clear();
-//		fillingOfSubjectField.sendKeys(subject);
-//		fillingOfBodyOfLetter.clear();
-//		fillingOfBodyOfLetter.sendKeys(text);
 		return this;
 	}
 
 	public MenuPage pushSendButton() {
 		Actions act = new Actions(driver);
-		act.click(pushSentBatton).build().perform();
+		act.click(pushSentBatton).pause(500).build().perform();
 //		pushSentBatton.click();
 		return new MenuPage();
 	}

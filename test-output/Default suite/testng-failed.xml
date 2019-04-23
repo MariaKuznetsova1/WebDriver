@@ -3,14 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ru.tests.LogoutTest">
+      <class name="ru.utility.ParseCsv">
         <methods>
-          <include name="goToStartPageAndLogin"/>
-          <include name="logoutTest"/>
-          <include name="logout"/>
-          <include name="closeDriver"/>
+          <include name="parseFromCSV"/>
         </methods>
-      </class> <!-- ru.tests.LogoutTest -->
+      </class> <!-- ru.utility.ParseCsv -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

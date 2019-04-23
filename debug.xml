@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Suite" verbose="10">
+<suite name="Suite" verbose="1">
 	<parameter name="login" value="seleniumtest00" />
 	<parameter name="password" value="gfhjkmlkzntcnjd" />
-
-	<test name="LogoutTest">
-		<groups>
-			<run>
-				<exclude name="logout" />
-			</run>
-		</groups>
+	<parameter name="csvSource" value="TestData.csv" />
+	<parameter name="start page" value="https://mail.yahoo.com" />
+	
+		<test name="LoginTest">
 		<classes>
-			<class name="ru.tests.LogoutTest">
-			</class>
+			<class name="ru.tests.LoginTest" />
 		</classes>
 	</test> <!-- Test -->
 

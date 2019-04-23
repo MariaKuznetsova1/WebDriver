@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="password" value="gfhjkmlkzntcnjd"/>
+  <parameter name="csvSource" value="TestData.csv"/>
   <parameter name="login" value="seleniumtest00"/>
-  <test thread-count="5" verbose="10" name="DraftTest(failed)">
+  <parameter name="start page" value="https://mail.yahoo.com"/>
+  <test thread-count="5" name="LoginTest(failed)">
     <classes>
-      <class name="ru.tests.DraftTest">
+      <class name="ru.tests.LoginTest">
         <methods>
           <include name="goToStartPageAndLogin"/>
-          <include name="checkingLastDraft" invocation-numbers="0 1 2"/>
+          <include name="checkLoginning"/>
           <include name="logout"/>
+          <include name="totalCleanUp"/>
           <include name="closeDriver"/>
         </methods>
-      </class> <!-- ru.tests.DraftTest -->
+      </class> <!-- ru.tests.LoginTest -->
     </classes>
-  </test> <!-- DraftTest(failed) -->
+  </test> <!-- LoginTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

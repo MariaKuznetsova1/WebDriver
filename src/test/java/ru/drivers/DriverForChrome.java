@@ -6,18 +6,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DriverForChrome {
-	private static  WebDriver instance = null;	
-	
-	private DriverForChrome() {		
+	private static WebDriver instance = null;
+
+	private DriverForChrome() {
 	}
-	
+
 	public static WebDriver getDriver() {
-		if (instance == null) { // если объект еще не создан
+		if (instance == null) {
 			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-			instance = new ChromeDriver(); // создать новый объект			
+			instance = new ChromeDriver();
 			instance.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}
-		return instance; // вернуть ранее созданный объект		
+		return instance;
 	}
-	
+
 }

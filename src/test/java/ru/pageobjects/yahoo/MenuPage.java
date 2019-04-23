@@ -1,6 +1,7 @@
 package ru.pageobjects.yahoo;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -19,17 +20,26 @@ public class MenuPage extends ParentPage {
 	private static final String LOGOUT_CSS = "[href*=logout]";
 	private static final String COUNT_OF_LETTERS_ATTRIBUT_NAME = "data-test-total-count";
 	private static final String CHECK_SEND_CSS = "[data-test-folder-name*=Sent]";
+	private static final String TRASH_CSS = "[data-test-folder-name = Trash]";
+	private static final String COUNT_OF_TRASH_ATTRIBUTE_NAME = "data-test-total-count";
+	private static final String CLICK_DELETE_TRASH_CSS = "[data-test-id = trashcan-icon]";
 
 	@FindBy(css = NEW_LETTER_CSS)
 	private WebElement createNewLetterButton;
 
 	@FindBy(css = CLICK_DRAFTS_CSS)
 	private WebElement draftItem;
-	
+
 	@FindBy(css = CHECK_SEND_CSS)
 	private WebElement sentItem;
-	
-	
+
+	@FindBy(css = TRASH_CSS)
+	private WebElement basket;
+
+	public WebElement getBasket() {
+		return basket;
+	}
+
 	public MenuPage() {
 		super(driver);
 		DriverFactory factory = new DriverFactory();
@@ -56,8 +66,8 @@ public class MenuPage extends ParentPage {
 		act.click(sentItem).build().perform();
 //		sentItem.click();
 		return new AnyLetterPage();
-	} 
-	
+	}
+
 	public LoginPage exit() {
 		Actions act = new Actions(driver);
 		WebElement exit = (new WebDriverWait(driver, 10))
@@ -77,6 +87,25 @@ public class MenuPage extends ParentPage {
 
 	public int checkCountSent() {
 		return Integer.parseInt(sentItem.getAttribute(COUNT_OF_LETTERS_ATTRIBUT_NAME));
+	}
+
+	public void goToBasket() {
+		Actions act = new Actions(driver);
+		act.click(basket).build().perform();
+	}
+
+	public int checkCountTrash() {
+		return Integer.parseInt(basket.getAttribute(COUNT_OF_TRASH_ATTRIBUTE_NAME));
+	}
+
+	public void deleteTrash() {
+		Actions act = new Actions(driver);
+		act.moveToElement(basket).pause(500).build().perform();
+		act.click(driver.findElement(By.cssSelector(CLICK_DELETE_TRASH_CSS))).sendKeys(Keys.ENTER).build().perform();
+	}
+
+	public void updateThePage() {
+		driver.get(driver.getCurrentUrl());
 	}
 
 }

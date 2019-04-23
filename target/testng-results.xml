@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="24" passed="24">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="338558" started-at="2019-04-23T14:08:14Z" finished-at="2019-04-23T14:13:52Z">
+    <groups>
+      <group name="draft">
+        <method signature="DraftTest.checkingLastDraft(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.DraftTest@4a3329b9]" name="checkingLastDraft" class="ru.tests.DraftTest"/>
+      </group> <!-- draft -->
+      <group name="afterSent">
+        <method signature="SendLetterTest.checkingLastSentLetter(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:ru.tests.SendLetterTest@5ae81e1]" name="checkingLastSentLetter" class="ru.tests.SendLetterTest"/>
+      </group> <!-- afterSent -->
+      <group name="delete">
+        <method signature="SendLetterTest.deleteAll()[pri:2, instance:ru.tests.SendLetterTest@5ae81e1]" name="deleteAll" class="ru.tests.SendLetterTest"/>
+      </group> <!-- delete -->
+      <group name="sent">
+        <method signature="SendLetterTest.writtingOfNewLetter(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.SendLetterTest@5ae81e1]" name="writtingOfNewLetter" class="ru.tests.SendLetterTest"/>
+        <method signature="AnotherWayForDeletingTest.writtingOfNewLetter(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.usabilityTests.AnotherWayForDeletingTest@17ae98d7]" name="writtingOfNewLetter" class="ru.tests.usabilityTests.AnotherWayForDeletingTest"/>
+        <method signature="CleaningTheBasket.writtingOfNewLetter(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.usabilityTests.CleaningTheBasket@13e698c7]" name="writtingOfNewLetter" class="ru.tests.usabilityTests.CleaningTheBasket"/>
+      </group> <!-- sent -->
+    </groups>
+    <test name="NewMessageTest" duration-ms="54499" started-at="2019-04-23T14:08:14Z" finished-at="2019-04-23T14:09:08Z">
+      <class name="ru.tests.NewLetterTest">
+        <test-method status="PASS" signature="goToStartPageAndLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.NewLetterTest@1fb19a0]" name="goToStartPageAndLogin" is-config="true" duration-ms="5712" started-at="2019-04-23T14:08:14Z" finished-at="2019-04-23T14:08:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gfhjkmlkzntcnjd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://mail.yahoo.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToStartPageAndLogin -->
+        <test-method status="PASS" signature="writtingOfNewLetter(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.NewLetterTest@1fb19a0]" name="writtingOfNewLetter" duration-ms="16742" started-at="2019-04-23T14:08:19Z" data-provider="dp" finished-at="2019-04-23T14:08:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[one]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[oneoneone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writtingOfNewLetter -->
+        <test-method status="PASS" signature="writtingOfNewLetter(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.NewLetterTest@1fb19a0]" name="writtingOfNewLetter" duration-ms="15214" started-at="2019-04-23T14:08:36Z" data-provider="dp" finished-at="2019-04-23T14:08:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[two]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[twotwotwo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writtingOfNewLetter -->
+        <test-method status="PASS" signature="writtingOfNewLetter(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.NewLetterTest@1fb19a0]" name="writtingOfNewLetter" duration-ms="13793" started-at="2019-04-23T14:08:51Z" data-provider="dp" finished-at="2019-04-23T14:09:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[three]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[threethreethree]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writtingOfNewLetter -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:ru.tests.NewLetterTest@1fb19a0]" name="logout" is-config="true" duration-ms="2817" started-at="2019-04-23T14:09:05Z" finished-at="2019-04-23T14:09:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- ru.tests.NewLetterTest -->
+    </test> <!-- NewMessageTest -->
+    <test name="LoginTest" duration-ms="6932" started-at="2019-04-23T14:09:08Z" finished-at="2019-04-23T14:09:15Z">
+      <class name="ru.tests.LoginTest">
+        <test-method status="PASS" signature="goToStartPageAndLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.LoginTest@2dca0d64]" name="goToStartPageAndLogin" is-config="true" duration-ms="4249" started-at="2019-04-23T14:09:08Z" finished-at="2019-04-23T14:09:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gfhjkmlkzntcnjd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://mail.yahoo.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToStartPageAndLogin -->
+        <test-method status="PASS" signature="checkLoginning(java.lang.String)[pri:0, instance:ru.tests.LoginTest@2dca0d64]" name="checkLoginning" duration-ms="377" started-at="2019-04-23T14:09:12Z" finished-at="2019-04-23T14:09:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkLoginning -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:ru.tests.LoginTest@2dca0d64]" name="logout" is-config="true" duration-ms="2302" started-at="2019-04-23T14:09:13Z" finished-at="2019-04-23T14:09:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- ru.tests.LoginTest -->
+    </test> <!-- LoginTest -->
+    <test name="DraftTest" duration-ms="55987" started-at="2019-04-23T14:09:15Z" finished-at="2019-04-23T14:10:11Z">
+      <class name="ru.tests.DraftTest">
+        <test-method status="PASS" signature="goToStartPageAndLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.DraftTest@4a3329b9]" name="goToStartPageAndLogin" is-config="true" duration-ms="4723" started-at="2019-04-23T14:09:15Z" finished-at="2019-04-23T14:09:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gfhjkmlkzntcnjd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://mail.yahoo.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToStartPageAndLogin -->
+        <test-method status="PASS" signature="checkingLastDraft(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.DraftTest@4a3329b9]" name="checkingLastDraft" duration-ms="15167" started-at="2019-04-23T14:09:20Z" data-provider="dp" finished-at="2019-04-23T14:09:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[one]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[oneoneone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingLastDraft -->
+        <test-method status="PASS" signature="checkingLastDraft(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.DraftTest@4a3329b9]" name="checkingLastDraft" duration-ms="14343" started-at="2019-04-23T14:09:35Z" data-provider="dp" finished-at="2019-04-23T14:09:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[two]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[twotwotwo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingLastDraft -->
+        <test-method status="PASS" signature="checkingLastDraft(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.DraftTest@4a3329b9]" name="checkingLastDraft" duration-ms="17138" started-at="2019-04-23T14:09:49Z" data-provider="dp" finished-at="2019-04-23T14:10:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[three]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[threethreethree]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingLastDraft -->
+        <test-method status="PASS" signature="deleteDrafts()[pri:0, instance:ru.tests.DraftTest@4a3329b9]" name="deleteDrafts" is-config="true" duration-ms="185" started-at="2019-04-23T14:10:07Z" finished-at="2019-04-23T14:10:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteDrafts -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:ru.tests.DraftTest@4a3329b9]" name="logout" is-config="true" duration-ms="4228" started-at="2019-04-23T14:10:07Z" finished-at="2019-04-23T14:10:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- ru.tests.DraftTest -->
+    </test> <!-- DraftTest -->
+    <test name="SendTest" duration-ms="99916" started-at="2019-04-23T14:10:11Z" finished-at="2019-04-23T14:11:51Z">
+      <class name="ru.tests.SendLetterTest">
+        <test-method status="PASS" signature="goToStartPageAndLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.SendLetterTest@5ae81e1]" name="goToStartPageAndLogin" is-config="true" duration-ms="4523" started-at="2019-04-23T14:10:11Z" finished-at="2019-04-23T14:10:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gfhjkmlkzntcnjd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://mail.yahoo.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToStartPageAndLogin -->
+        <test-method status="PASS" signature="writtingOfNewLetter(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.SendLetterTest@5ae81e1]" name="writtingOfNewLetter" duration-ms="18165" started-at="2019-04-23T14:10:16Z" data-provider="dp" finished-at="2019-04-23T14:10:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[one]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[oneoneone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writtingOfNewLetter -->
+        <test-method status="PASS" signature="writtingOfNewLetter(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.SendLetterTest@5ae81e1]" name="writtingOfNewLetter" duration-ms="16732" started-at="2019-04-23T14:10:34Z" data-provider="dp" finished-at="2019-04-23T14:10:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[two]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[twotwotwo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writtingOfNewLetter -->
+        <test-method status="PASS" signature="writtingOfNewLetter(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.SendLetterTest@5ae81e1]" name="writtingOfNewLetter" duration-ms="15419" started-at="2019-04-23T14:10:51Z" data-provider="dp" finished-at="2019-04-23T14:11:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[three]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[threethreethree]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writtingOfNewLetter -->
+        <test-method status="PASS" signature="checkingLastSentLetter(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:ru.tests.SendLetterTest@5ae81e1]" name="checkingLastSentLetter" duration-ms="13872" started-at="2019-04-23T14:11:06Z" data-provider="dp" finished-at="2019-04-23T14:11:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[one]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[oneoneone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingLastSentLetter -->
+        <test-method status="PASS" signature="checkingLastSentLetter(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:ru.tests.SendLetterTest@5ae81e1]" name="checkingLastSentLetter" duration-ms="13537" started-at="2019-04-23T14:11:20Z" data-provider="dp" finished-at="2019-04-23T14:11:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[two]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[twotwotwo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingLastSentLetter -->
+        <test-method status="PASS" signature="checkingLastSentLetter(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:ru.tests.SendLetterTest@5ae81e1]" name="checkingLastSentLetter" duration-ms="13995" started-at="2019-04-23T14:11:34Z" data-provider="dp" finished-at="2019-04-23T14:11:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[three]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[threethreethree]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingLastSentLetter -->
+        <test-method status="PASS" signature="deleteAll()[pri:2, instance:ru.tests.SendLetterTest@5ae81e1]" name="deleteAll" duration-ms="139" started-at="2019-04-23T14:11:48Z" finished-at="2019-04-23T14:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteAll -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:ru.tests.SendLetterTest@5ae81e1]" name="logout" is-config="true" duration-ms="3246" started-at="2019-04-23T14:11:48Z" finished-at="2019-04-23T14:11:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- ru.tests.SendLetterTest -->
+    </test> <!-- SendTest -->
+    <test name="AnotherWayForDeleting" duration-ms="55180" started-at="2019-04-23T14:11:51Z" finished-at="2019-04-23T14:12:46Z">
+      <class name="ru.tests.usabilityTests.AnotherWayForDeletingTest">
+        <test-method status="PASS" signature="goToStartPageAndLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.usabilityTests.AnotherWayForDeletingTest@17ae98d7]" name="goToStartPageAndLogin" is-config="true" duration-ms="4798" started-at="2019-04-23T14:11:51Z" finished-at="2019-04-23T14:11:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gfhjkmlkzntcnjd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://mail.yahoo.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToStartPageAndLogin -->
+        <test-method status="PASS" signature="writtingOfNewLetter(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.usabilityTests.AnotherWayForDeletingTest@17ae98d7]" name="writtingOfNewLetter" duration-ms="15704" started-at="2019-04-23T14:11:56Z" data-provider="dp" finished-at="2019-04-23T14:12:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[one]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[oneoneone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writtingOfNewLetter -->
+        <test-method status="PASS" signature="writtingOfNewLetter(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.usabilityTests.AnotherWayForDeletingTest@17ae98d7]" name="writtingOfNewLetter" duration-ms="15375" started-at="2019-04-23T14:12:12Z" data-provider="dp" finished-at="2019-04-23T14:12:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[two]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[twotwotwo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writtingOfNewLetter -->
+        <test-method status="PASS" signature="writtingOfNewLetter(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.usabilityTests.AnotherWayForDeletingTest@17ae98d7]" name="writtingOfNewLetter" duration-ms="14831" started-at="2019-04-23T14:12:27Z" data-provider="dp" finished-at="2019-04-23T14:12:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[three]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[threethreethree]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writtingOfNewLetter -->
+        <test-method status="PASS" signature="deletingMessagesWithCtrlA()[pri:1, instance:ru.tests.usabilityTests.AnotherWayForDeletingTest@17ae98d7]" name="deletingMessagesWithCtrlA" duration-ms="934" started-at="2019-04-23T14:12:42Z" finished-at="2019-04-23T14:12:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletingMessagesWithCtrlA -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:ru.tests.usabilityTests.AnotherWayForDeletingTest@17ae98d7]" name="logout" is-config="true" duration-ms="3235" started-at="2019-04-23T14:12:43Z" finished-at="2019-04-23T14:12:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- ru.tests.usabilityTests.AnotherWayForDeletingTest -->
+    </test> <!-- AnotherWayForDeleting -->
+    <test name="CleanTheTrashBasket" duration-ms="58163" started-at="2019-04-23T14:12:46Z" finished-at="2019-04-23T14:13:44Z">
+      <class name="ru.tests.usabilityTests.CleaningTheBasket">
+        <test-method status="PASS" signature="goToStartPageAndLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.usabilityTests.CleaningTheBasket@13e698c7]" name="goToStartPageAndLogin" is-config="true" duration-ms="4634" started-at="2019-04-23T14:12:46Z" finished-at="2019-04-23T14:12:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gfhjkmlkzntcnjd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://mail.yahoo.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToStartPageAndLogin -->
+        <test-method status="PASS" signature="writtingOfNewLetter(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.usabilityTests.CleaningTheBasket@13e698c7]" name="writtingOfNewLetter" duration-ms="15949" started-at="2019-04-23T14:12:51Z" data-provider="dp" finished-at="2019-04-23T14:13:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[one]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[oneoneone]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writtingOfNewLetter -->
+        <test-method status="PASS" signature="writtingOfNewLetter(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.usabilityTests.CleaningTheBasket@13e698c7]" name="writtingOfNewLetter" duration-ms="14786" started-at="2019-04-23T14:13:07Z" data-provider="dp" finished-at="2019-04-23T14:13:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[two]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[twotwotwo]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writtingOfNewLetter -->
+        <test-method status="PASS" signature="writtingOfNewLetter(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.usabilityTests.CleaningTheBasket@13e698c7]" name="writtingOfNewLetter" duration-ms="15322" started-at="2019-04-23T14:13:22Z" data-provider="dp" finished-at="2019-04-23T14:13:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00@mail.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[three]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[threethreethree]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- writtingOfNewLetter -->
+        <test-method status="PASS" signature="deletingMessagesWithCtrlA()[pri:1, instance:ru.tests.usabilityTests.CleaningTheBasket@13e698c7]" name="deletingMessagesWithCtrlA" duration-ms="955" started-at="2019-04-23T14:13:37Z" finished-at="2019-04-23T14:13:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletingMessagesWithCtrlA -->
+        <test-method status="PASS" signature="cleanBasket()[pri:2, instance:ru.tests.usabilityTests.CleaningTheBasket@13e698c7]" name="cleanBasket" duration-ms="2765" started-at="2019-04-23T14:13:38Z" finished-at="2019-04-23T14:13:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanBasket -->
+        <test-method status="PASS" signature="logout()[pri:0, instance:ru.tests.usabilityTests.CleaningTheBasket@13e698c7]" name="logout" is-config="true" duration-ms="3568" started-at="2019-04-23T14:13:41Z" finished-at="2019-04-23T14:13:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- ru.tests.usabilityTests.CleaningTheBasket -->
+    </test> <!-- CleanTheTrashBasket -->
+    <test name="LogoutTest" duration-ms="7800" started-at="2019-04-23T14:13:44Z" finished-at="2019-04-23T14:13:52Z">
+      <class name="ru.tests.LogoutTest">
+        <test-method status="PASS" signature="totalCleanUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.LogoutTest@1bfe3203]" name="totalCleanUp" is-config="true" duration-ms="20851" started-at="2019-04-23T14:07:53Z" finished-at="2019-04-23T14:08:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gfhjkmlkzntcnjd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://mail.yahoo.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- totalCleanUp -->
+        <test-method status="PASS" signature="goToStartPageAndLogin(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:ru.tests.LogoutTest@1bfe3203]" name="goToStartPageAndLogin" is-config="true" duration-ms="4787" started-at="2019-04-23T14:13:44Z" finished-at="2019-04-23T14:13:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gfhjkmlkzntcnjd]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://mail.yahoo.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToStartPageAndLogin -->
+        <test-method status="PASS" signature="logoutTest(java.lang.String)[pri:0, instance:ru.tests.LogoutTest@1bfe3203]" name="logoutTest" duration-ms="3012" started-at="2019-04-23T14:13:49Z" finished-at="2019-04-23T14:13:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumtest00]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:ru.tests.LogoutTest@1bfe3203]" name="closeDriver" is-config="true" duration-ms="1100" started-at="2019-04-23T14:13:52Z" finished-at="2019-04-23T14:13:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- ru.tests.LogoutTest -->
+    </test> <!-- LogoutTest -->
+  </suite> <!-- Suite -->
+</testng-results>
